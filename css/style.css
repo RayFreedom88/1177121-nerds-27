@@ -294,6 +294,18 @@ a {
   list-style: none;
 }
 
+.partners__img {
+  opacity: 0.2;
+}
+
+.partners__img:hover {
+  opacity: 1;
+}
+
+.partners__img:active {
+  opacity: 0.1;
+}
+
 /* Contacts - Контактная информация*/
 
 .feedback {
@@ -620,3 +632,4 @@ a {
 .pagination__link:active {
   background-color: #d5d5d5;
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
