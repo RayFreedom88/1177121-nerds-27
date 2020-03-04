@@ -693,6 +693,7 @@ margin-bottom: 20px;
   position: relative;
 
   display: block;
+
   width: 80px;
   height: 80px;
 
@@ -704,32 +705,28 @@ margin-bottom: 20px;
   content: "";
 
   position: absolute;
-  top: 50%;
-  left: 50%;
 
+  bottom: 50%;
+  right: 50%;
+  width: 26px;
+  height: 26px;
+
+  background-position: center;
   background-repeat: no-repeat;
+  transform: translateX(50%) translateY(50%);
 }
 
-.socials__link_vk::after {
-  width: 26px;
-  height: 15px;
-
+.socials__link--vk::after {
   background-image: url(../img/svg/vk-icon.svg);
 }
 
-.socials__link_fb::after {
-  width: 12px;
-  height: 22px;
-
+.socials__link--fb::after {
   background-image: url(../img/svg/fb-icon.svg);
 }
 
-.socials__link_insta::after {
-  width: 21px;
-  height: 21px;
-
+.socials__link--insta::after {
   background-image: url(../img/svg/insta-icon.svg);
-}
+} */
 
 .socials__link:hover {
   background-color: #e74246;
