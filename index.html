@@ -28,7 +28,7 @@
         </ul>
       </nav>
     </header>
-    <main class="page-conteiner">
+    <main class="page-container">
 
       <h1 class="visually-hidden">Дизайн-студия «Нёрдс»</h1>
       <!-- Slider - Слайдеры -->
@@ -54,8 +54,8 @@
           <a class="button slider__button" href="">Узнать больше</a>
         </div>
       </section>
-      <!-- Conteiner-center - Контейнер центратор -->
-      <div class="conteiner-center">
+      <!-- Container - Контейнер центратор -->
+      <div class="container">
         <!-- Service - Список возможнойстей студии -->
         <section class="service">
           <h2 class="visually-hidden">Список возможностей студии</h2>
@@ -144,23 +144,26 @@
       </div>
       <!-- Contacts - Контактная информация -->
       <section class="contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
 
+        <h2 class="visually-hidden">Контактная информация</h2>
+        
+        <div class="container">
+          <div class="contacts__container">
+            <div class="feedback">
+              <h3 class="feedback__title">Nёrds desing studio</h3>
+              <p class="feedback__adress">191186, Санкт-Петербург, <br>
+              ул. Б. Конюшенная, д. 19/8</p> 
+              <p class="feedback__phone">тел. +7 (812) 275-75-75</p>
+              
+              <a class="button feedback__button" href="">Напишите нам</a>
+            </div>
+          </div> 
+        </div>
+        
         <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716177124!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1581432568932!5m2!1sru!2sru" 
         width="100%" height="416" frameborder="0" style="border:0;" allowfullscreen="">
         </iframe>
         <img class="visually-hidden" src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="100%" height="416">
-
-        <div class="contacts__center">
-          <div class="feedback">
-            <h3 class="feedback__title">Nёrds desing studio</h3>
-            <p class="feedback__adress">191186, Санкт-Петербург, <br>
-            ул. Б. Конюшенная, д. 19/8</p> 
-            <p class="feedback__phone">тел. +7 (812) 275-75-75</p>
-            
-            <a class="button feedback__button" href="">Напишите нам</a>
-          </div>
-        </div> 
       </section>
     </main>
     <!-- Footer - Подвал -->
@@ -185,27 +188,30 @@
     </footer> 
     <!-- Popup - Модальное окно -->
     <section class="popup">
+
       <h2 class="visually-hidden">Форма обратной связи</h2>
+
       <div class="message">
         <form  class="message__form" action="https://echo.htmlacademy.ru" method="post">
-          <button class="popup__button-close" type="button" aria-label="Закрыть форму"><img src="img/svg/close-cross.svg" width="21" height="21" alt=""></button>
-          <p class="message__title">Напишите нам</p> 
+          
+          <button class="popup__button-close" type="button" aria-label="Закрыть форму"></button>
 
-          <div class="message__row">
-            <p class="message__item">
-              <label for="name">Ваше имя:</label>
-              <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-            </p>
-            <p class="message__item">
-              <label for="mail">Ваш e-mail:</label>
-              <input type="email" name="mail" id="mail" placeholder="email@example.com">
-            </p>
-          </div>
-    
-          <p class="message__item text__letter">
-            <label for="letter">Текст письма:</label>
-            <textarea name="letter" id="letter" rows="5" placeholder="В свободной форме"></textarea>
-          </p>
+          <p class="message__title">Напишите нам</p> 
+          
+          <ul class="message__list">
+            <li class="message__item">
+              <label class="message__label" for="name">Ваше имя:</label>
+              <input class="message__input" type="text" name="name" id="name" placeholder="Имя Фамилия">
+            </li>
+            <li class="message__item">
+              <label class="message__label" for="mail">Ваш e-mail:</label>
+              <input class="message__input" type="email" name="mail" id="mail" placeholder="email@example.com">
+            </li>
+            <li class="message__item message__letter">
+              <label class="message__label" for="letter">Текст письма:</label>
+              <textarea class="message__textarea" name="letter" id="letter" rows="5" placeholder="В свободной форме"></textarea>
+            </li>
+          </ul>
     
           <input class="button message__button"  type="submit" value="Отправить" aria-label="Отправить данные">
         </form>
