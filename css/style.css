@@ -27,15 +27,13 @@ a {
 }
 
 .visually-hidden {
-  visibility: hidden;
-  margin: 0;
-  height: 0;
   position: absolute;
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0;
-  border: 0;
-  height: 1px;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -263,6 +261,7 @@ a {
 /* Slider - Слайдеры */
 
 .slider {
+  position: relative;
   width: auto;
 
   background-color: #eeeeee;
@@ -338,6 +337,49 @@ a {
 .slide-3 {
   display: none;
 }
+
+.slider__controls {
+  position: absolute;
+  right: 50%;
+  bottom: 95px;
+  
+  transform: translateX(50%)
+}
+
+.slider__toogle-label {
+  position: relative;
+  display: inline-block;
+
+  width: 18px;
+  height: 18px;
+
+  margin-top: 1px;
+  margin-right: 6px;
+  margin-bottom: -1px;
+  margin-left: 7px;
+  
+  box-sizing: border-box;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 5px solid #fff;
+  border-radius: 50%;
+  cursor: pointer
+}
+
+.slider__toogle:checked + .slider__toogle-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  width: 8px;
+  height: 8px;
+
+  box-sizing: border-box;
+  border: 2px solid #c1c1c1;
+  border-radius: 50%
+}
+
 
 /* Container - Контейнер центратор */
 
@@ -515,11 +557,11 @@ margin-left: 100px;
 .about-us__item::before {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 12px;
   left: -35px;
 
   width: 25px;
-  height: 0px;
+  height: 2px;
 
   background-color: #fb565a;
   }
@@ -1128,6 +1170,8 @@ margin-left: 100px;
 /* Catalog - Список демонстрационных сайтов */
 
 .catalog {
+  width: 830px;
+
   margin: 0;
   margin-left: 89px;
   margin-right: auto;
@@ -1219,10 +1263,10 @@ margin-left: 100px;
   position: relative;
    
   width: 360px;
-  margin: 0;
 
+  margin: 0;
   padding: 0;
-  padding-top: 65px;
+  padding-top: 66px;
 }
 
 .catalog__item::before {
