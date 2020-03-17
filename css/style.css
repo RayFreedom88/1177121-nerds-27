@@ -19,6 +19,8 @@ body {
   line-height: 24px;
   color: black;
   background-color: #ffffff;
+
+  min-width: 1200px;
   
   margin: 0;
   padding: 0;
