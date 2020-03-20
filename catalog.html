@@ -10,11 +10,9 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <div class="navigation-logo">
-          <a class="navigation-logo__link" href="index.html">
-            <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип Дизайн-студии «Нёрдс»">
-          </a>
-        </div>
+        <a class="navigation-logo__link" href="index.html">
+          <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип Дизайн-студии «Нёрдс»">
+        </a>
         <ul class="navigation__list">
           <li class="navigation__item"><a class="navigation__link" href="">Студия</a></li>
           <li class="navigation__item"><a class="navigation__link" href="">Клиенты</a></li>
@@ -201,6 +199,14 @@
 
         <h2 class="visually-hidden">Контактная информация</h2>
         
+        <div class="contacts__map-container">
+          <img src="img/map/map.png" width="1440" height="416" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </div>
+
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716177124!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1581432568932!5m2!1sru!2sru" 
+        allowfullscreen="">
+        </iframe>
+
         <div class="container">
           <div class="contacts__container">
             <div class="feedback">
@@ -211,12 +217,7 @@
               <a class="button feedback__button" href="">Напишите нам</a>
             </div>
           </div> 
-        </div>
-        
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533248!2d30.320858716177124!3d59.93871648187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1581432568932!5m2!1sru!2sru" 
-        allowfullscreen="">
-        </iframe>
-        <img class="visually-hidden map-img" src="img/map.png" alt="Дизайн-студия NЁRDS расположена по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+        </div> 
       </section>
     </main>
     <!-- Footer - Подвал -->
@@ -225,19 +226,18 @@
         <p class="prompt__appeal">Давайте дружить, это выгодно!</p>
         <p class="prompt__discount">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-      <div class="socials">
-        <ul class="socials__list">
-          <li class="socials__item">
-            <a class="socials__link socials__link--vk" href=""></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--fb" href=""></a>
-          </li>
-          <li class="socials__item">
-            <a class="socials__link socials__link--insta" href=""></a>
-          </li>
-        </ul>
-      </div>
+
+      <ul class="socials__list">
+        <li class="socials__item">
+          <a class="socials__link socials__link--vk" href=""></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--fb" href=""></a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link socials__link--insta" href=""></a>          
+        </li>
+      </ul>
     </footer>
     <!-- Popup - Модальное окно -->
     <section class="popup">
