@@ -7,7 +7,7 @@
 
 ### Ссылка на готовый проект «Нёрд»
 
-<a href="https://rayfreedom88.github.io/1177121-pink-19/" rel="nofollow">https://rayfreedom88.github.io/1177121-pink-19/</a>
+<a href="https://rayfreedom88.github.io/1177121-nerds-27/" rel="nofollow">https://rayfreedom88.github.io/1177121-nerds-27/</a>
 
 ---
 
